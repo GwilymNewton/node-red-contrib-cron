@@ -28,6 +28,7 @@ module.exports = function (RED) {
             }, 500);
             job.start();
         } catch (err) {
+            console.log("Error":,err)
             node.error("Invalid Expression");
         }
     }
